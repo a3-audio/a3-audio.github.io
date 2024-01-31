@@ -1,0 +1,42 @@
+.flip-card {
+  width: 14em;
+  height: 21rem;
+  position: relative;
+}
+
+.flip-card-front,
+.flip-card-back {
+  text-align: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transition: ease-in-out 600ms;
+  overflow: hidden;
+}
+
+// das hioer kann auch noch bessser gemacht werden
+.flip-card-front {
+  .flip-card:hover & {
+    transform: rotateY(180deg);
+  }
+}
+
+.flip-card-back {
+  transform: rotateY(-180deg);
+  
+  h4{
+    margin-top: 0;
+  }
+
+  h4:last-of-type{
+    margin-top: 0.8em;
+  }
+
+  
+  .flip-card:hover & {
+    transform: rotateY(0deg);
+  }
+}

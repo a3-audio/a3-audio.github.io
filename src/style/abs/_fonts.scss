@@ -1,0 +1,94 @@
+//die Fonts
+$normal: "XXIIAven";
+$hadline: "Blinker";
+
+@font-face {
+  font-family: $hadline;
+  font-weight: 100;
+  font-style: normal;
+  src: url(./font/Blinker-Thin.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: $hadline;
+  font-weight: 200;
+  font-style: normal;
+  src: url(./font/Blinker-ExtraLight.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: $hadline;
+  font-weight: 300;
+  font-style: normal;
+  src: url(./font/Blinker-Light.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: $hadline;
+  font-weight: 400;
+  font-style: normal;
+  src: url(./font/Blinker-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: $hadline;
+  font-weight: 600;
+  font-style: normal;
+  src: url(./font/Blinker-SemiBold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: $hadline;
+  font-weight: 700;
+  font-style: normal;
+  src: url(./font/Blinker-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: $hadline;
+  font-weight: 800;
+  font-style: normal;
+  src: url(./font/Blinker-ExtraBold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: $hadline;
+  font-weight: 900;
+  font-style: normal;
+  src: url(./font/Blinker-Black.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: $normal;
+  font-weight: 300;
+  font-style: normal;
+  src: url(./font/XXIIAven-Light.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: $normal;
+  font-weight: 400;
+  font-style: normal;
+  src: url(./font/XXIIAven-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: $normal;
+  font-weight: 500;
+  font-style: normal;
+  src: url(./font/XXIIAven-Medium.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: $normal;
+  font-weight: 700;
+  font-style: normal;
+  src: url(./font/XXIIAven-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: $normal;
+  font-weight: 900;
+  font-style: normal;
+  src: url(./font/XXIIAven-Black.ttf) format("truetype");
+}

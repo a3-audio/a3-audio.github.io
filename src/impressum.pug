@@ -1,0 +1,54 @@
+doctype html
+html
+  include ./includes/head.pug
+  body
+    header
+      include ./includes/nav.pug
+
+    main
+
+      section.dark#home
+        div
+          a(href="#imprint")
+            img(src="./img/a3_logo-wed_dark.svg" alt="a^3_logo")
+            h1 Impressum
+
+      section#imprint.light
+        div
+          h2 Angaben gem&auml;&szlig; &sect; 5 TMG
+          h3 A3 Audio UG (haftungsbeschränkt)
+          p Braunschweiger Str. 4
+            br
+            | 12055 Berlin
+
+          h3 Geschäftsführer:
+          p Raphael Eismann
+
+          h3 Gesellschafter:
+          p.
+            Jendrik Bradaczek<br />
+            Raphael Eismann<br />
+            Patric Schmitz<br />
+            Mark Schulze
+
+          p <b>Handelsregister:</b> HRB 244573 B
+          p <b>USt-ID Nummer:</b> DE355563810
+
+          h2 Kontakt
+          p Telefon: +49 156 78719489
+          p E-Mail: contact@a3-audio.com
+
+          h2 EU-Streitschlichtung
+          p.
+            Die Europ&auml;ische Kommission stellt eine Plattform zur
+            Online-Streitbeilegung (OS) bereit: <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener noreferrer">https://ec.europa.eu/consumers/odr/</a>.<br/> Unsere E-Mail-Adresse
+            finden Sie oben im Impressum.
+
+          h2 Verbraucher&shy;streit&shy;beilegung/Universal&shy;schlichtungs&shy;stelle
+          p.
+            Wir sind nicht bereit oder verpflichtet, an
+            Streitbeilegungsverfahren vor einer
+            Verbraucherschlichtungsstelle teilzunehmen.
+
+
+      include ./includes/footer.pug

@@ -1,0 +1,53 @@
+doctype html
+html
+  include ./includes/head.pug
+  body
+    header
+      include ./includes/nav.pug
+
+    main
+
+      section.dark#home
+        div
+          a(href="#imprint")
+            img(src="./img/a3_logo-wed_dark.svg" alt="a^3_logo")
+            h1 Legal Notice
+
+      section#imprint.light
+        div
+          h2 Information pursuant to Sect. 5 German Telemedia Act (TMG)
+          h3 A3 Audio UG (haftungsbeschränkt)
+          p Braunschweiger Str. 4
+            br
+            | 12055 Berlin
+
+          h3 Executive Director:
+          p Raphael Eismann
+
+          h3 Partner:
+          p.
+            Jendrik Bradaczek<br />
+            Raphael Eismann<br />
+            Patric Schmitz<br />
+            Mark Schulze
+
+          p <b>Commerical Register:</b> HRB 244573 B
+          p <b>VAT Number:</b> DE355563810
+
+          h2 Contact
+          p Phone: +49 156 78719489
+          p E-Mail: contact@a3-audio.com
+
+          h2 EU dispute resolution
+          p.
+            The European Commission provides a platform for online dispute resolution (ODR): 
+            <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener noreferrer">https://ec.europa.eu/consumers/odr/</a>
+            .<br /> Our e-mail address can be found above in the site notice.
+
+          h2 Dispute resolution proceedings in front of a consumer arbitration board
+          p.
+            We are not willing or obliged to participate in dispute
+            resolution proceedings in front of a consumer arbitration board.
+
+
+      include ./includes/footer.pug

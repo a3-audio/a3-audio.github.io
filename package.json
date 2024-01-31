@@ -1,0 +1,41 @@
+{
+  "name": "a3-homepage_boiler",
+  "version": "1.0.0",
+  "description": "This package is for building and updating the A3 homepage.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "init"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/a3-audio/a3-homepage.git"
+  },
+  "author": "DiscoErgoSum",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/a3-audio/a3-homepage/issues"
+  },
+  "homepage": "https://github.com/a3-audio/a3-homepage#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.11",
+    "del": "^7.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-inject-string": "^1.1.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-pug": "^5.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "sass": "^1.57.0"
+  },
+  "browserslist": [
+    "defaults"
+  ],
+  "dependencies": {
+    "child_process": "^1.0.2"
+  }
+}

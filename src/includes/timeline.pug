@@ -1,0 +1,104 @@
+section#timeline.dark
+  div
+    //  THE CHALLENGE: 
+    //
+      1. recreate version 3 (https://codepen.io/cjl750/pen/mXbMyo) with no javascript whatsoever
+        2. make code as abstract as possible (e.g., trying to calc positions that would work with any number of dots instead of hard-coding the container width as we do in our media queries)
+        3. highest browser support possible 
+    //  Bonus points: turn v3's pseudo content into actual element content, so it's accessible to screen readers, search engines, etc. 
+    .flex-parent
+      h2 Timeline
+      .input-flex-container
+        //  Die Bulet Poins 
+        input(type='radio' name='timeline-dot' data-description='2020-05')
+        .dot-info(data-description='2020-05')
+          span.t_date 2020-05
+          span.label pcb handsoldered
+          
+        input(type='radio' name='timeline-dot' data-description='2020-07')
+        .dot-info(data-description='2020-07')
+          span.t_date 2020-07
+          span.label pcb design
+
+        input(type='radio' name='timeline-dot' data-description='2020-08')
+        .dot-info(data-description='2020-08')
+          span.t_date 2020-08
+          span.label functional a3mix
+
+        input(type='radio' name='timeline-dot' data-description='2020-12')
+        .dot-info(data-description='2020-12')
+          span.t_date 2020-12
+          span.label buttonmatrix pcb design
+
+        input(type='radio' name='timeline-dot' data-description='2021-03')
+        .dot-info(data-description='2021-03')
+          span.t_date 2021-03
+          span.label functional a3motion
+
+        input(type='radio' name='timeline-dot' data-description='2021-05')
+        .dot-info(data-description='2021-05')
+          span.t_date 2021-05
+          span.label functional core
+
+        input(type='radio' name='timeline-dot' data-description='2021-06')
+        .dot-info(data-description='2021-06')
+          span.t_date 2021-06
+          span.label functional 12v pa system
+
+        input(type='radio' name='timeline-dot' data-description='2021-10')
+        .dot-info(data-description='2021-10')
+          span.t_date 2021-10
+          span.label housing
+
+        input(type='radio' name='timeline-dot' data-description='2021-11')
+        .dot-info(data-description='2021-11')
+          span.t_date 2021-11
+          span.label second a3motion
+
+        input(type='radio' name='timeline-dot' data-description='2021-12')
+        .dot-info(data-description='2021-12')
+          span.t_date 2021-12
+          span.label devdoc
+
+        input(type='radio' name='timeline-dot' data-description='2022-01' checked)
+        .dot-info(data-description='2022-01')
+          span.t_date 2022-01
+          span.label 3d-audio.io
+
+        input(type='radio' name='timeline-dot' data-description='2022-02')
+        .dot-info(data-description='2022-02')
+          span.t_date 2022-02
+          span.label userdoc
+
+        input(type='radio' name='timeline-dot' data-description='2022-03')
+        .dot-info(data-description='2022-03')
+          span.t_date 2022-03
+          span.label published
+
+        //  die beschreibungen 
+        #timeline-descriptions-wrapper
+          p(data-description='2020-05') draft ready (bild)
+
+          p(data-description='2020-07') v0.1 ready (bild)
+
+          p(data-description='2020-08') v0.1 ready (bild)
+
+          p(data-description='2020-12') v0.1 ready (bild)
+
+          p(data-description='2021-03') v0.1 ready (bild)
+
+          p(data-description='2021-05') v0.1 ready (bild)
+
+          p(data-description='2021-06') stresstest and userfeedback summer
+
+          p(data-description='2021-10') v0.1 printed
+
+          p(data-description='2021-11') v0.1 ready (bild)
+
+          p(data-description='2021-12') Because organic search rankings take work.
+
+          p(data-description='2022-01') launching
+
+          p(data-description='2022-02') v0.1 ready
+
+          p(data-description='2022-03') HellYes!

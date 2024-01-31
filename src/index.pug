@@ -1,0 +1,29 @@
+doctype html
+html
+  include ./includes/head.pug
+  body
+    header
+      include ./includes/nav.pug
+
+    main
+
+      section.dark#home
+        a(href="#vision")
+          div
+            img(src="./img/a3_logo-wed_dark.svg" alt="a^3_logo")
+            h1 Interact live with 3D Audio
+
+      include ./includes/vision.pug
+
+      include ./includes/features.pug
+
+      include ./includes/system.pug
+
+      include ./includes/about.pug
+
+      include ./includes/team.pug
+
+      include ./includes/sign-up.pug
+
+    footer
+      include ./includes/footer

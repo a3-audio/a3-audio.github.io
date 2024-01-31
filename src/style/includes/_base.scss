@@ -1,0 +1,82 @@
+@use "../abs/colors";
+@use "../abs/fonts";
+
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: fonts.$normal;
+  font-style: normal;
+  font-size: 100%;
+  letter-spacing: 0.025em;
+  line-height: 1.2em;
+  overflow-x: hidden;
+  background-color: colors.$white;
+}
+
+h1,
+h2 {
+  font-family: fonts.$hadline;
+  font-weight: 600;
+  line-height: 1.1em;
+  letter-spacing: 0.07em;
+  max-width: 40ch;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: colors.$green;
+  margin-bottom: 0.5em;
+}
+
+h3,
+h4 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  max-width: 48ch;
+  margin-top: 0.4em;
+  margin-bottom: 0.2em;
+}
+
+p {
+  margin-top: 0.3em;
+  max-width: 58ch;
+  margin-bottom: 0.5em;
+}
+
+a {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-word;
+}
+
+ul {
+  padding-left: 2ch;
+  max-width: 48ch;
+}
+
+li {
+  margin-bottom: 0.5em;
+}
+
+img {
+  height: auto;
+  width: 100%;
+  max-width: max-content;
+}
+
+section {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.8rem 3rem 4rem;
+}
