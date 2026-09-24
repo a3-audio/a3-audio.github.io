@@ -124,23 +124,6 @@ function watch() {
   gulp.watch(paths.font.src, gulp.series(copyFonts, reload));
 }
 
-function deploy_stage(done) {
-  return spawn.spawn('rsync',
-              ['-rv', '--checksum',
-               '-e ssh -p12321 -i ~/.ssh/id_ed25519',
-               '-e ssh -p12321 -i ~/.ssh/id_ed25519.a3-web-deployment',
-               'dist/', 'web-deploy@stage.a3-audio.com:'],
-              {stdio: 'inherit'});
-}
-
-function deploy_production(done) {
-  return spawn.spawn('rsync',
-              ['-rv', '--checksum',
-               '-e ssh -i ~/.ssh/id_ed25519.a3-web-deployment',
-               'dist/', 'web-deploy@a3-audio.com@a3-audio.com:'],
-              {stdio: 'inherit'});
-}
-
 gulp.task('build', gulp.series(clean, html, style, image, copyFonts));
 gulp.task(
   'default',
@@ -148,5 +131,3 @@ gulp.task(
     'build',
     gulp.parallel(browseSyncDep, watch)
   ));
-gulp.task('stage', gulp.series('build', deploy_stage));
-gulp.task('deploy', gulp.series('build', deploy_production));
