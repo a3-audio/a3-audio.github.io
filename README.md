@@ -25,15 +25,12 @@ gulp build
 
 ### deploy
 
-We offer two gulp targets for automated deployment to our web servers.
+There is no deploy target in this repo. `gulp build` produces `dist/`; publishing it
+is a manual step.
 
-`gulp stage` deploys to our staging machine at https://stage.a3-audio.com.
-
-`gulp deploy` deploys to our production machine at https://a3-audio.com.
-
-To do so, you need the appropriate public/private key pair stored as `~/.ssh/id_ed25519.a3-web-deployment`.
-It is not available via this repo, for obvious reasons, and is protected by a strong passphrase.
-To enable passwordless deployment, make sure to add it to your ssh-agent or keyring application.
+There used to be two rsync-over-SSH targets here. They pointed at hosts that are no
+longer the project's, so they were removed rather than left pointing somewhere the
+project does not control.
 
 
 ## TODOS
