@@ -5,15 +5,15 @@ Source: https://github.com/a3-audio/a3-audio.github.io
 Comment: https://a3-audio.com
 
 Files: *
-Copyright: 2024-2026 A3 Audio <contact@a3-audio.com>
+Copyright: 2024-2026 Raphael Eismann
 License: CC-BY-SA-4.0
 
 Files: gulpfile.js src/style/*
-Copyright: 2024-2026 A3 Audio <contact@a3-audio.com>
+Copyright: 2024-2026 Raphael Eismann
 License: GPL-3.0-or-later
 
 Files: .gitignore .github/* package.json package-lock.json src/img/favicon/site.webmanifest
-Copyright: 2024-2026 A3 Audio <contact@a3-audio.com>
+Copyright: 2024-2026 Raphael Eismann
 License: CC0-1.0
 
 Files: src/style/font/Blinker*
@@ -27,6 +27,6 @@ License: OFL-1.1
 Comment: XXII Aven by Lecter Johnson, Doubletwo Studios. Copyright and license as embedded in the fonts' name tables.
 
 Files: src/style/font/._*
-Copyright: 2024 A3 Audio <contact@a3-audio.com>
+Copyright: 2024 Raphael Eismann
 License: CC0-1.0
 Comment: macOS AppleDouble resource-fork metadata, no font data.
