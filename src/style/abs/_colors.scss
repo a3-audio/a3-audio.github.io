@@ -7,3 +7,9 @@ $green: #00d9c0;
 $blue: #246eb9;
 $red: #bf1363;
 $yellow: #fffc31;
+
+// Text tones that keep WCAG AA contrast (4.5:1) where the brand green can't:
+// the green itself reaches only 1.8:1 on white, so it stays an accent there.
+$green-dark: #00796b; // 5.3:1 on $white
+$muted: #4a5058; // 8.1:1 on $white, 6.5:1 on $grey
+$muted-on-dark: #b8bab4; // 6.9:1 on $black

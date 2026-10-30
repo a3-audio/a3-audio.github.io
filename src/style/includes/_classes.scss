@@ -13,6 +13,10 @@
 .dark {
   background-color: colors.$black;
   color: colors.$white;
+
+  h2 {
+    color: colors.$green;
+  }
 }
 
 .text-left {

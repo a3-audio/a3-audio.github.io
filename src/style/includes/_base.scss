@@ -12,7 +12,7 @@ body {
   font-style: normal;
   font-size: 100%;
   letter-spacing: 0.025em;
-  line-height: 1.2em;
+  line-height: 1.5;
   overflow-x: hidden;
   background-color: colors.$white;
 }
@@ -32,7 +32,7 @@ h1 {
 
 h2 {
   font-size: 1.8rem;
-  color: colors.$green;
+  color: colors.$green-dark;
   margin-bottom: 0.5em;
 }
 
@@ -79,4 +79,13 @@ section {
   align-items: center;
   justify-content: center;
   padding: 2.8rem 3rem 4rem;
+}
+
+:focus-visible {
+  outline: 2px solid colors.$green-dark;
+  outline-offset: 3px;
+}
+
+.dark :focus-visible {
+  outline-color: colors.$green;
 }
