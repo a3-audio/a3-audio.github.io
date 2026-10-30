@@ -8,10 +8,14 @@ html
     main
 
       section.dark#home
-        a(href="https://a3-audio.github.io/a3-doc/index.html")
-          div
-            img(src="./img/a3_logo-wed_dark.svg" alt="a^3_logo")
-            h1 Interact live with 3D Audio
+        .hero
+          img.hero-logo(src="./img/a3_logo-wed_dark.svg" alt="A³ logo")
+          //- The line may only break after the dash.
+          h1 Spatial DJ setup — #[span.nowrap 3D audio for the booth]
+          p.hero-sub Open source
+          .hero-actions
+            a.button.button--primary(href="#system") See the system
+            a.button.button--quiet(href="https://a3-audio.github.io/a3-doc/index.html") Documentation
 
       include ./includes/system.pug
 
