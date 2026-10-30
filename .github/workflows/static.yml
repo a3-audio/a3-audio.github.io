@@ -38,7 +38,7 @@ jobs:
       - name: npm install
         run: npm install
       - name: gulp build
-        run: gulp build
+        run: npx gulp build
       - name: Setup Pages
         uses: actions/configure-pages@v6
       - name: Upload artifact
