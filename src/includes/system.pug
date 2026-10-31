@@ -1,10 +1,11 @@
-//- Card pictures share one frame (3:4, the screenshots' own aspect), so a
-//- pictogram without a screenshot still lines up with the others.
-mixin part(href, img, alt, title, subline, pictogram)
-  a.part(href=href)
-    .part-frame(class=pictogram ? 'part-frame--pictogram' : '')
+//- Card pictures share one frame (3:4, the screenshots' own aspect). The
+//- picture links to that same picture, large, in the docs; the text to the
+//- device's page.
+mixin part(href, pictureHref, img, alt, title, subline)
+  .part
+    a.part-frame(href=pictureHref)
       img(src=img alt=alt loading="lazy")
-    .part-body
+    a.part-body(href=href)
       h3= title
       p.subline= subline
       ul
@@ -17,7 +18,7 @@ section#system.light
     h2 A³ System
 
     figure.setup
-      a(href=userDoc + 'user.html#welcome-setup')
+      a(href=userDoc + 'a3system.html#a3system-picture')
         img(src='./img/a3-setup.jpg' alt='Decks A to D side by side, then the A³ desk and A³ Motion, each deck playing its own track')
       figcaption
         | The full set: four StemDecks, each playing its own track as four stems
@@ -29,25 +30,25 @@ section#parts.grey
     h2 The parts
 
     .parts
-      +part(userDoc + 'a3motion.html#motion-at-a-glance', './img/a3-motion-screen.jpg', 'A³ Motion: the sphere with four channels moving', 'A³ Motion', '4-Channel Motion Sampler')
+      +part(userDoc + 'a3motion.html#motion-at-a-glance', userDoc + 'a3motion.html#a3motion-picture', './img/a3-motion-screen.jpg', 'A³ Motion: the sphere with four channels moving', 'A³ Motion', '4-Channel Motion Sampler')
         li control motion via touch
         li one clip and six actions per channel
         li beat-synced
         li OSC output
 
-      +part(userDoc + 'a3mix.html#a3mix-virtual', './img/a3-desk-screen.jpg', 'A³ Mixer: the desk with four channels playing', 'A³ Mixer', '4-Channel DJ Mixer')
+      +part(userDoc + 'a3mix.html#a3mix-virtual', userDoc + 'a3mix.html#a3mix-picture', './img/a3-desk-screen.jpg', 'A³ Mixer: the desk with four channels playing', 'A³ Mixer', '4-Channel DJ Mixer')
         li control spatialization per channel
         li pre-listen binaural 3D
         li FX section
         li OSC output
 
-      +part(userDoc + 'stemdeck.html#stemdeck-at-a-glance', './img/a3-stemdeck-screen.jpg', 'StemDeck: one deck playing, its four stems on their own paths', 'StemDeck', 'Stem Player')
+      +part(userDoc + 'stemdeck.html#stemdeck-at-a-glance', userDoc + 'stemdeck.html#stemdeck-picture', './img/a3-stemdeck-screen.jpg', 'StemDeck: one deck playing, its four stems on their own paths', 'StemDeck', 'Stem Player')
         li four stems per deck, moved one by one
         li up to four decks, local or over AES67
         li beat-synced actions per stem
         li Pro DJ Link tempo master
 
-      +part(userDoc + 'a3core.html', './img/a3-core-about.jpg', 'a3-core: the ABOUT page with the A³ logo, the tree of every A³ repository with versions and licences, and the third-party software', 'a3-core', 'The A³ Core\'s window')
+      +part(userDoc + 'a3core.html', userDoc + 'a3core.html#a3core-picture', './img/a3-core-about.jpg', 'a3-core: the ABOUT page with the A³ logo, the tree of every A³ repository with versions and licences, and the third-party software', 'a3-core', 'The A³ Core\'s window')
         li the audio, the speakers, the rig
         li everything A³ is built from
         li versions and licences at a glance
