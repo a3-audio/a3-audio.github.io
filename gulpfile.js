@@ -44,6 +44,12 @@ const paths = {
     src: "./src/style/font/**/*",
     dest: "./dist/style/font/",
   },
+  // Videos and their poster frames, copied as they are: encoded for the web
+  // beforehand (H.264/AAC, faststart), played by the browser's own <video>.
+  video: {
+    src: "./src/video/**/*",
+    dest: "./dist/video/",
+  },
 };
 
 // deplyment server
@@ -115,6 +121,12 @@ function copyFonts(done) {
     .pipe(browserSync.stream());
 }
 
+function copyVideos(done) {
+  return gulp.src(paths.video.src)
+    .pipe(gulp.dest(paths.video.dest))
+    .pipe(browserSync.stream());
+}
+
 function watch() {
   gulp.watch("./src/includes/*.pug", gulp.series(html, reload));
   gulp.watch(paths.html.src, gulp.series(html, reload));
@@ -122,9 +134,10 @@ function watch() {
   gulp.watch("./src/style/**/*.scss", gulp.series(style, reload));
   gulp.watch(paths.image.src, gulp.series(image, reload));
   gulp.watch(paths.font.src, gulp.series(copyFonts, reload));
+  gulp.watch(paths.video.src, gulp.series(copyVideos, reload));
 }
 
-gulp.task('build', gulp.series(clean, html, style, image, copyFonts));
+gulp.task('build', gulp.series(clean, html, style, image, copyFonts, copyVideos));
 gulp.task(
   'default',
   gulp.series(
